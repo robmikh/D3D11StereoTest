@@ -38,7 +38,7 @@ inline auto CreateRenderTargetView(winrt::com_ptr<ID3D11Device> const& device, w
     return view;
 }
 
-int wmain()
+int __stdcall WinMain(HINSTANCE, HINSTANCE, PSTR, int) 
 {
     winrt::init_apartment();
     StereoWindow::RegisterWindowClass();
